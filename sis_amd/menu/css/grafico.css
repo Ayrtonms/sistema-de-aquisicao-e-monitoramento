@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0;}
+ 
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 15px;
+}
+
+.tabela{
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+}
+
+.b1, .b2{
+width:10%;
+height:120%;
+}

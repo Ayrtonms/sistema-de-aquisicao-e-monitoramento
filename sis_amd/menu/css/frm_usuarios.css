@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0;}
+ 
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 15px;
+}
+
+.form{
+background-color:#FFF;
+position:absolute;
+top:25%;
+left:25%;
+width:50%;
+height:50%;
+border: 1px solid black;
+}
+
+.label{
+font-size: 18px;
+}
+
+.nome_l, .login_l, .senha_l, .conf_l{
+position:absolute;
+left:5%;
+}
+
+.nome_l{
+top:15%;
+}
+
+.login_l{
+top:30%;
+}
+
+.senha_l{
+top:45%;
+}
+
+.conf_l{
+top:60%;
+}
+
+.nome_f, .login_f, .senha_f, .conf_f{
+position:absolute;
+left:50%;
+width:35%;
+}
+
+.nome_f{
+top:15.5%;
+}
+
+.login_f{
+top:30.5%;
+}
+
+.senha_f{
+top:45.5%;
+}
+
+.conf_f{
+top:60.5%;
+}
+
+.sub, .del, .back{
+position:absolute;
+top:80%;
+height:10%;
+}
+
+.sub{
+left:5%;
+width:10%;
+}
+
+.del{
+right:5%;
+width:10%;
+}
+
+.back{
+left:45%;
+width:10%;
+}
