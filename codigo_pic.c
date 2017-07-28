@@ -26,10 +26,10 @@ void main() {
         }
         
         resultado1 /= 30;
-        Vresult1 = (resultado1 * 4200) / 1023;
+        Vresult1 = (resultado1 * 5000) / 1023;
 
         resultado2 /= 30;
-        Vresult2 = (resultado2 * 4200) / 1023;
+        Vresult2 = (resultado2 * 5000) / 1023;
 
         sendnum(Vresult1);
         swputc('!');
