@@ -13,10 +13,6 @@
 
 char charRecebido;
 int fd;
-int flagL=0;
-int flagD=0;
-int numquant=0;
-char str[10];
 
 int check_ch(char c);
 
@@ -92,6 +88,12 @@ PI_THREAD(recebe_serial){
             fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
             digitalWrite(4,LOW);
             digitalWrite(5,HIGH);
+            
+            char comm[200];
+            strcpy(comm, "");
+            sprintf(comm, "echo \"%s\" >> log.txt", dados);
+            
+            system(comm);
           }
           else{
             digitalWrite(5,LOW);
