@@ -1,0 +1,101 @@
+*{margin: 0; padding: 0;}
+ 
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 15px;
+}
+
+.filtro{
+background-color:#FFF;
+position:absolute;
+top:25%;
+left:25%;
+width:50%;
+height:50%;
+border: 1px solid black;
+}
+
+.label{
+font-size: 18px;
+}
+
+.d1_l, .modo_l, .qtd_l{
+position:absolute;
+left:5%;
+}
+
+.d1_l, .d2_l{
+top:15%;
+}
+
+.d2_l{
+position:absolute;
+left:75%;
+}
+
+.modo_l{
+top:35%;
+}
+
+.qtd_l{
+top:55%;
+}
+
+.d1_f, .modo_f, .qtd_f{
+position:absolute;
+left:5%;
+}
+
+.d1_f, .d2_f{
+top:25%;
+width:20%;
+}
+
+.d2_f{
+position:absolute;
+right:5%;
+}
+
+.modo_f{
+top:45%;
+width:15%;
+}
+
+.qtd_f{
+top:65%;
+width:20%;
+}
+
+.eixo_l{
+position:absolute;
+top:35%;
+left:75%;
+}
+
+.eixo_f{
+position:absolute;
+top:45%;
+left:75%;
+width:20%;
+}
+
+.agr_l{
+position:absolute;
+top:55%;
+left:75%;
+}
+
+.agr_f{
+position:absolute;
+top:65%;
+left:75%;
+width:20%;
+}
+
+.ok{
+position:absolute;
+top:80%;
+left:45%;
+width:10%;
+height:10%;
+}

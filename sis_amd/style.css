@@ -1,0 +1,58 @@
+*{margin: 0; padding: 0;}
+ 
+body{
+background:#445674;
+font-family: arial, helvetica, sans-serif;
+font-size: 15px;
+}
+ 
+.login{
+display:inline-block;
+position:fixed;
+top:0;
+bottom:0;
+left:0;
+right:0;
+width:17%;
+height:19%;
+margin:auto;
+padding:15;
+border:1px solid #c0c0c0;
+background:#EEE;
+}
+
+.login_l, .senha_l{
+position:absolute;
+left:5%;
+}
+
+.login_l{
+top:34%;
+}
+
+.senha_l{
+top:56%;
+}
+
+.login_f, .senha_f{
+position:absolute;
+left:28%;
+width:67%;
+height:13%;
+}
+
+.login_f{
+top:34.5%;
+}
+
+.senha_f{
+top:56.5%;
+}
+
+.botao{
+position:absolute;
+top:75%;
+left:45%;
+width:10%;
+height:15%;
+}
