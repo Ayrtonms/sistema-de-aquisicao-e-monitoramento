@@ -19,6 +19,9 @@
 </html>
 
 <?php
+	ini_set('display_errors', 1);
+	error_reporting(E_ALL);
+
 	if(isset($_POST['login']) && isset($_POST['senha'])){
 		$senha = $_POST['senha'];
 		$a = true;

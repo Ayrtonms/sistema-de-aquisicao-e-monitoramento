@@ -14,46 +14,46 @@
 			document.getElementById('frame').setAttribute('src', 'cns_usuarios.php');
 		}
 
-		function p_mensal(){
-			document.getElementById('frame').setAttribute('src', 'painel/filtro_mensal.php');
+		function t_mensal(){
+			document.getElementById('frame').setAttribute('src', 'temp/filtro_mensal.php');
 		}
 
-		function p_data(){
-			document.getElementById('frame').setAttribute('src', 'painel/filtro_data.php');
+		function t_data(){
+			document.getElementById('frame').setAttribute('src', 'temp/filtro_data.php');
 		}
 
-		function p_perso(){
-			document.getElementById('frame').setAttribute('src', 'painel/filtro_perso.php');
+		function t_perso(){
+			document.getElementById('frame').setAttribute('src', 'temp/filtro_perso.php');
 		}
 
-		function s_mensal(){
-			document.getElementById('frame').setAttribute('src', 'sensor/filtro_mensal.php');
+		function l_mensal(){
+			document.getElementById('frame').setAttribute('src', 'lum/filtro_mensal.php');
 		}
 
-		function s_data(){
-			document.getElementById('frame').setAttribute('src', 'sensor/filtro_data.php');
+		function l_data(){
+			document.getElementById('frame').setAttribute('src', 'lum/filtro_data.php');
 		}
 
-		function s_perso(){
-			document.getElementById('frame').setAttribute('src', 'sensor/filtro_perso.php');
+		function l_perso(){
+			document.getElementById('frame').setAttribute('src', 'lum/filtro_perso.php');
 		}
 	</script>
 
 	<body>
 		<nav>
 			<ul class="menu">
-				<li><a href="#">Ver dados do painel</a>
+				<li><a href="#">Ver dados do sensor de temperatura</a>
 					<ul>
-						<li onclick='p_mensal();'><a href="#">Filtro mensal básico</a></li>
-						<li onclick='p_data();'><a href="#">Filtro de data básico</a></li>
-						<li onclick='p_perso();'><a href="#">Filtro personalizado</a></li>
+						<li onclick='t_mensal();'><a href="#">Filtro mensal básico</a></li>
+						<li onclick='t_data();'><a href="#">Filtro de data básico</a></li>
+						<li onclick='t_perso();'><a href="#">Filtro personalizado</a></li>
 					</ul>
 				</li>
 				<li><a href="#">Ver dados do sensor de luminosidade</a>
 					<ul>
-						<li onclick='s_mensal();'><a href="#">Filtro mensal básico</a></li>
-						<li onclick='s_data();'><a href="#">Filtro de data básico</a></li>
-						<li onclick='s_perso();'><a href="#">Filtro personalizado</a></li>
+						<li onclick='l_mensal();'><a href="#">Filtro mensal básico</a></li>
+						<li onclick='l_data();'><a href="#">Filtro de data básico</a></li>
+						<li onclick='l_perso();'><a href="#">Filtro personalizado</a></li>
 					</ul>
 				</li>
 				<li onclick='usuarios();'><a href="#">Usuários</a></li>
