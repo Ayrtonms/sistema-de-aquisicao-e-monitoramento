@@ -1,0 +1,12 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="template.xhtml">
+
+	<ui:define name="corpo">
+		<f:metadata>
+			<f:viewAction action="#{sessionBean.checkLogado}" />
+		</f:metadata>
+
+		<title>Sistema de monitoramento</title>
+	</ui:define>
+</ui:composition>

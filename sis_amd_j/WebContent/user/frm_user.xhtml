@@ -1,0 +1,52 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="../template.xhtml">
+
+	<ui:define name="corpo">
+		<f:metadata>
+			<f:viewAction action="#{sessionBean.checkLogado}" />
+			<f:viewAction action="#{sessionBean.checkAdmin}" />
+			<f:viewAction action="#{userBean.init}" />
+		</f:metadata>
+
+		<title>Cadastro de usuários</title>
+
+		<center>
+			<h2>Cadastro de usuários</h2>
+
+			<p:panelGrid columns="1">
+
+				<h:form acceptcharset="UTF-8" id="form">
+					<p:messages closable="true" />
+					<p:panelGrid columns="2">
+						<p:outputLabel value="Nome:" for="nome" />
+						<p:inputText id="nome" value="#{userBean.nome}" />
+						<p:outputLabel value="Login:" for="login" />
+						<p:inputText id="login" value="#{userBean.login}" />
+						<p:outputLabel value="Senha:" for="senha" />
+						<p:password id="senha" value="#{userBean.senha}" />
+						<p:outputLabel value="Confirmar:" for="confirmar" />
+						<p:password id="confirmar" value="#{userBean.confirmar}" />
+						<p:outputLabel value="É administrador?" for="admin" />
+						<p:selectBooleanCheckbox id="admin" value="#{userBean.admin}" />
+					</p:panelGrid>
+					<br />
+					<center>
+						<p:commandButton actionListener="#{userBean.inserir}"
+							value="Inserir" update="form"
+							rendered="#{userBean.id_usuario eq 0}" />
+						<p:commandButton actionListener="#{userBean.inserir}"
+							value="Atualizar" update="form"
+							rendered="#{userBean.id_usuario ne 0}" />
+						<p:button value="Novo" outcome="frm_user.jsf" />
+						<p:button value="Voltar" outcome="cns_user.jsf" />
+					</center>
+				</h:form>
+
+			</p:panelGrid>
+		</center>
+
+	</ui:define>
+</ui:composition>

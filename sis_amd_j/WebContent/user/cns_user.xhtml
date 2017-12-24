@@ -1,0 +1,52 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="../template.xhtml">
+
+	<ui:define name="corpo">
+		<f:metadata>
+			<f:viewAction action="#{sessionBean.checkLogado}" />
+			<f:viewAction action="#{sessionBean.checkAdmin}" />
+		</f:metadata>
+
+		<title>Consulta de usuários</title>
+
+		<center>
+			<h2>Consulta de usuários</h2>
+
+			<p:panelGrid columns="1">
+				<h:form acceptcharset="UTF-8" id="form">
+					<p:messages closable="true" />
+
+					<p:panelGrid columns="1">
+						<p:button value="Novo" outcome="frm_user.jsf" />
+						<p:dataTable var="usuario" value="#{userView.usuarios}" rows="20"
+							paginator="true" emptyMessage="Nenhum registro encontrado."
+							tableStyle="width:auto">
+							<p:column headerText="Nome">
+								<p:outputLabel value="#{usuario.nome}" />
+							</p:column>
+							<p:column headerText="Login">
+								<p:outputLabel value="#{usuario.login} " />
+							</p:column>
+							<p:column headerText="É administrador?">
+								<p:outputLabel value="#{usuario.admin ? 'Sim' : 'Não'}" />
+							</p:column>
+							<p:column headerText="">
+								<p:button icon="fa fa-edit"
+									outcome="frm_user.jsf?id_usuario=#{usuario.id_usuario}" />
+								<p:commandButton icon="fa fa-trash"
+									onclick="return confirm('Tem certeza de que deseja deletar este registro?')"
+									actionListener="#{userView.delete(usuario.id_usuario)}"
+									update="form" />
+							</p:column>
+						</p:dataTable>
+					</p:panelGrid>
+				</h:form>
+
+			</p:panelGrid>
+		</center>
+
+	</ui:define>
+</ui:composition>
