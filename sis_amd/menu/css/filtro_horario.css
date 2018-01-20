@@ -1,0 +1,75 @@
+*{margin: 0; padding: 0;}
+ 
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 15px;
+}
+
+.filtro{
+background-color:#FFF;
+position:absolute;
+top:25%;
+left:25%;
+width:50%;
+height:50%;
+border: 1px solid black;
+}
+
+.label{
+font-size: 18px;
+}
+
+.data_l, .qtd_l{
+position:absolute;
+top:5%;
+}
+
+.data_l, .v1_l{
+left:5%;
+}
+
+.modo_v_l{
+left:40%;
+}
+
+.qtd_l, .v2_l{
+left:75%;
+}
+
+.data_f, .qtd_f{
+position:absolute;
+top:10%;
+}
+
+.data_f, .v1_f{
+left:5%;
+width:20%;
+}
+
+.modo_v_f{
+left:40%;
+width:20%;
+}
+
+.qtd_f, .v2_f{
+left:65%;
+width:20%;
+}
+
+.v1_l, .modo_v_l, .v2_l{
+position:absolute;
+top:55%;
+}
+
+.v1_f, .modo_v_f, .v2_f{
+position:absolute;
+top:60%;
+}
+
+.ok{
+position:absolute;
+top:80%;
+left:45%;
+width:10%;
+height:10%;
+}
