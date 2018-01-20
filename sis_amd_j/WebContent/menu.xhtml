@@ -1,0 +1,35 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:form>
+		<p:menubar>
+			<p:submenu label="Temperatura">
+				<p:menuitem value="Filtro mensal básico"
+					url="/temp/filtro_mensal.jsf" />
+				<p:menuitem value="Filtro de data básico"
+					url="/temp/filtro_data.jsf" />
+				<p:menuitem value="Filtro personalizado"
+					url="/temp/filtro_personalizado.jsf" />
+				<p:menuitem value="Médias horárias"
+					url="/temp/filtro_horario.jsf" />
+			</p:submenu>
+			<p:menuitem value="|" disabled="true" />
+			<p:submenu label="Luminosidade">
+				<p:menuitem value="Filtro mensal básico"
+					url="/light/filtro_mensal.jsf" />
+				<p:menuitem value="Filtro de data básico"
+					url="/light/filtro_data.jsf" />
+				<p:menuitem value="Filtro personalizado"
+					url="/light/filtro_personalizado.jsf" />
+				<p:menuitem value="Médias horárias"
+					url="/light/filtro_horario.jsf" />
+			</p:submenu>
+			<p:menuitem value="|" disabled="true" />
+			<p:menuitem value="Usuários" url="/user/cns_user.jsf" />
+			<p:menuitem value="|" disabled="true" />
+			<p:menuitem value="Sair" action="#{sessionBean.logout}" />
+		</p:menubar>
+	</h:form>
+</ui:composition>
